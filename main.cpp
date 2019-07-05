@@ -19,7 +19,9 @@ void fibonacci_iterative(int n)
     for ( int i = 0 ; i < n ; i++ )
     {
         if ( i <= 1 )
-        next = i;
+        {
+            next = i;
+        }
         else
         {
             next = first + second;
@@ -33,7 +35,7 @@ void fibonacci_iterative(int n)
 int main()
 {
     int choice,n,i=0;
-    cout<<"Enter the number of terms for Fibonacci Series:";
+    cout<<"Enter the number of terms for Fibonacci Series: ";
     cin>>n;
     cout<<"Enter choice :  1 - Recursive,       2 - Iterative\n";
     cin>>choice;
@@ -54,7 +56,7 @@ int main()
     }
     else
     {
-        cout<<"\nIncorrect choice value - enter only 1 or 2 \n";
+        cout<<"\nIncorrect choice value - enter only number 1 or 2 \n";
     }
     return 0;
 }
